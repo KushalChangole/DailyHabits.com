@@ -329,6 +329,7 @@ th[rowspan="2"] , .habit-name {
 }
 .current-day{
     background-color: rgba(167, 166, 166, 0.704);
+    border: 2.5px solid black;
 }
 /* hait deleting portion*/
 .habit-name .delete-icon {
@@ -387,7 +388,7 @@ th[rowspan="2"] , .habit-name {
         font-size: 1rem;
     }
     table th, table td{
-        padding: .1rem .4rem;
+        padding: .4rem .4rem;
     }
     /* .habit-name .delete-icon {
     display: inline !important;

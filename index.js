@@ -1,7 +1,7 @@
 let left_arror = document.getElementById('left-arrow') ;
 let right_arror = document.getElementById('right-arrow') ;
 const month_change = document.getElementById("month-change");
-
+const habitcolor =["rgb(121, 214, 121)","rgb(242, 222, 172)","rgb(168, 233, 245)","rgb(226, 205, 240)"]
 
 
 const months=["January", "February", "March", "April", "May", "June",
@@ -106,7 +106,7 @@ function renderHabits(){
                 // Mark achieved days
                 if (habit.achievedDays && habit.achievedDays.includes(i)) {
                     newtd.classList.add("achieved");
-                    newtd.style.backgroundColor = "rgb(121, 214, 121)";
+                    newtd.style.backgroundColor = habit.color || "rgb(121, 214, 121)";
                     newtd.style.fontSize = ".5rem";
                     newtd.textContent = "✔️";
                     achievedCount++;
@@ -257,10 +257,12 @@ save_btn.addEventListener("click", (event) => {
    
     //store in local storage
     let habits = JSON.parse(localStorage.getItem("habits")) || [];
+    const color =habitcolor[habits.length % habitcolor.length]; // Randomly select a color from the array
     habits.push({
         name: habitName,
         goal:parseInt(goalNumber),
         achieved: [],
+        color:color,
         month:currentMonthIndex,
         year: currentyear
     });
@@ -299,7 +301,7 @@ document.getElementById("chart").addEventListener("click", (event) => {
             achievedCell.textContent = parseInt(achievedCell.textContent) - 1;
         } else {
             cell.classList.add("achieved");
-            cell.style.backgroundColor = "rgb(121, 214, 121)";
+            cell.style.backgroundColor = habit.color || "rgb(121, 214, 121)"; 
             cell.style.fontSize = ".5rem"
             cell.textContent="✔️"
             cell.style.transition="background-color 0.3s ease"
@@ -382,8 +384,8 @@ document.getElementById("close-btn-create-note").addEventListener("click",()=>{
 
 
 //Notes delete icon functionality
-document.getElementsByClassName("delete-icon-notes").addEventListener("click",()=>{
+// document.getElementsByClassName("delete-icon-notes").addEventListener("click",()=>{
     
-})
+// })
  
 
