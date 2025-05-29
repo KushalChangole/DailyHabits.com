@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+/* Header Portion */
+.navbar{
+    /* background-color: aqua; */
+    height: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.nav-link-group{
+    margin-right: 10rem;
+    display: flex;
+    gap: 1rem;
+}
+#logo_img{
+    margin-left: 8rem;
+    height: 70%;
+}
+.nav-links{
+    font-size: 1rem;
+    font-family: "Share Tech", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav-links:hover{
+    color: rgb(9, 203, 6);
+}
+
+/* section-1 */
+
+.section-1{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    max-width: 70%;
+    text-align: center;
+}
+.heading h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+#sub-heading{
+    margin-bottom: 2rem;
+}
+.heading a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+}
+#offer{
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: rgb(114, 114, 114);
+}
+#featured-on{
+    margin-top: 3rem;
+    width: 12rem;
+}
+#good-news{
+    margin-top: 1rem;
+    font-size: .7rem;
+    color: rgb(114, 114, 114);
+}
+#working-process-img{
+    margin-top: 2rem;
+    max-width: 100%;
+}
+/* section-2 */
+.section-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+#section-2-heading h2{
+    font-size: 3rem;
+}
+.card-1-sect-2{
+    background-color:rgb(255, 240, 240);
+    width: 100vw;
+    display: flex;
+    padding: 5rem 1rem;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   width: 20%;
+   /* background-color: aqua; */
+   /* margin-left: 20%; */
+}
+.info h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.info p{
+    font-size: 1.1rem;
+    color: rgb(75, 75, 75);
+}
+.card-img img{
+    width: 35rem;
+    margin-left: 3rem;
+}
+
+.card-2-section-2{
+     /* background-color:rgb(255, 240, 240); */
+    width: 100vw;
+    display: flex;
+    padding: 5rem 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-2-img img{
+    width: 35rem;
+}
+.info-card2{
+      display: flex;
+    flex-direction: column;
+   justify-content: center;
+   width: 20%;
+   margin-left: 2.3rem;
+}
+.info-card2 h3{
+     font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.info-card2 p{
+    font-size: 1.1rem;
+    color: rgb(75, 75, 75);
+}
+
+/* section-3 */
+
+.section-3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 254, 233);
+    max-width: 100vw;
+    padding: 6rem 4rem;
+    /* overflow-x: hidden; */
+}
+#sect-3-heading{
+    font-size: 2.8rem;
+    /* margin-top: 5rem; */
+}
+.user-rev-container{
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+.comment{
+    width: 18rem;
+    background-color: white;
+    padding: 1rem 1rem;
+}
+.comment p{
+    line-height: 1.8rem;
+}
+.highlight{
+    font-size: 1.2rem;
+    color: rgb(51, 149, 110);
+    font-weight: bold;
+}
+
+/* sectoion-4 */
+.section-4{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 4rem;
+    background-color: rgb(246, 240, 240);
+}
+.creator-box{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+} 
+.creator-box h2{
+    font-size: 2rem;
+}
+.creator-box h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.creator-box p{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    /* font-size: 1.1rem; */
+}
+#creator-img{
+    width: 12rem;
+}
+
+/* Section-5 */
+
+.section-5{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 8rem;
+    /* background-color: rgb(230, 230, 230); */
+}
+.sect-5-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sect-5-info h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.sect-5-info  p{
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+}
+.sect-5-info a{
+      text-decoration: none;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+}
+/* Footer */
+footer{
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 5rem 5rem;
+}
+.try{
+    width: 30%;
+}
+.try p{
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    font-weight: 500;
+}
+.try a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+#try_span{
+    color: black;
+}
+
+.use-cases-list li a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+   
+}
+.use-cases-list{
+    list-style: none;
+}
+.use-cases-list li{
+    margin-top: .5rem;
+}
+
+
+
+
+/* Tab Responsive */
+@media (min-width:800px) and (max-width: 1070px){
+    /* navbar */
+    .nav-link-group{
+        margin-right: 2rem;
+    }
+    #logo_img{
+        margin-left: 2rem;
+    }
+    /* section-2 */
+  .info{
+    width: 30%;
+  }
+  .info h3{
+    font-size: 1.5rem;
+  }
+  .info p{
+    font-size: 1rem;
+  }
+    .card-img img{
+        width: 25rem;
+    }
+    /* card-2-section-2 */
+    .info-card2{
+        width: 20%;
+    }
+    .info-card2 h3{
+        font-size: 1.5rem;
+    }
+    .info-card2 p{
+        font-size: 1rem;
+    }
+    .card-2-img img{
+        width: 25rem;
+    }
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+        /* Navbar */
+        #logo_img{
+            margin-left: 0;
+        }
+        .nav-link-group{
+            margin-right: 1rem;
+        }
+
+        /* Section-1 */
+        .heading h1{
+            font-size: 2.3rem;
+        }
+        .heading{
+            width: 100%;
+        }
+        #working-process-img{
+            /* width: 70rem; */
+            max-width: 110%;
+        }
+
+        /* Section-2  How it Works Section */
+
+        #section-2-heading h2{
+            font-size: 2rem;
+        }
+        /* Card-1 */
+        .info{
+            width: 100%;
+            margin-left: 1rem;
+        }
+        .card-img img{
+            width: 20rem;
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        /* Card-2 */
+        .info-card2{
+            order:-1;
+            width: 100%;
+            margin-left: 1rem;
+        }
+        .card-2-img img{
+             width: 100%;
+            /* margin-left: 1rem; */
+            margin-top: 1rem;
+        }
+    
+        /* Section-3  From Our Users Section*/
+
+        #sect-3-heading{
+            font-size: 2.5rem;
+            /* width: 100%; */
+            text-align: center;
+        }
+
+        /* Section-4 Meet the Creator Section */
+        .section-4{
+            padding: 1rem 1rem;
+           
+        }
+        .creator-box{
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /*Section-5  Get Started */
+        .section-5{
+            padding: 1rem 1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-5 h2{
+            /* margin-top: 1rem; */
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .sect-5-info{
+            width: 80%;
+            padding: 2rem 0;
+        }
+
+        /* Footer */
+        footer{
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            gap: 5rem;
+        }
+        .try{
+            width: 100%;
+            text-align: center;
+        }
+    }

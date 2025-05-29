@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="./planner.css">
+</head>
+
+<body>
+    <div class="section-1">
+        <div class="root-container">
+
+            <div id="month-change">
+                <img src="./left-arrow.png" id="left-arrow">
+                <p id="month-display"></p>
+                <img src="./right-arrow.png" id="right-arrow">
+            </div>
+
+            <div id="calender">
+                <div id="chart">
+                <!-- Calender will be displayed -->
+                 </div>
+
+                <div class="task-btn">
+                     <button id="add-task">+ Add Habbit</button>
+                </div>
+
+            </div>
+
+            <div id="create-habbit" class="hide">
+                <div class="box-header">
+                    <h2>Create New Habbit</h2>
+                    <img src="./close.png" id="close-btn">
+                </div>
+                <hr>
+                <div id="habit-inputs">
+                    <form action="#">
+                    <label for="habbit-name">Habit Name</label><br>
+                    <input type="text" name="habbit_name" id="habbit-name" placeholder="Eg. Exercise" required><br>
+                    <label for="goal">Goal</label><br>
+                    <input type="text" name="goals" id="goal" placeholder="Number of times to perform this habit in a month" required>
+                    <button id="save-btn">Save</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="notes-outer-box">
+
+        <div class="notes-container">
+            <div class="notes-header">
+                <h2>Notes</h2>
+                <button id="add-note-btn">+ New Note</button>
+            </div>
+            <hr>
+            <div id="notes-written">
+                <p id="create-note-intruction">Create your first note by clicking on + New Note</p>
+            </div>
+            <div id="notes-list">
+                <!-- <div class="my_note">
+                    <div class="note-header">
+                    <h4>date</h4>
+                    <img>
+                    </div>
+                    <p id="note_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quis saepe vitae dignissimos deserunt recusandae aliquid fugiat optio beatae impedit ducimus dolore, error iure assumenda suscipit. Voluptates, soluta facilis.</p>
+                </div> -->
+        </div>
+        </div>
+
+        <div id="create-note" class="hide">
+            <div class="create-note-header">
+                <h2>Create New Note</h2>
+                <img src="./close.png" id="close-btn-create-note">
+            </div>
+            <hr>
+            <div class="write-note">
+                <textarea name="note" id="new-note" placeholder="Write your thoughts" required></textarea>
+                <button id="save-note-btn">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
